@@ -1,0 +1,166 @@
+body,
+html {
+    overflow-x: hidden;
+
+}
+
+:root {
+    --couleur-blanche: rgb(217, 217, 217);
+    --neonorange: rgb(55, 136, 28);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: unset;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/mur.png");
+    background-repeat: none;
+    background-size: cover;
+}
+
+/* 
++----------------------------------------------------------------------+
+| Menu Page
++----------------------------------------------------------------------+
+*/
+.welcome-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 65px;
+    
+
+}
+.backage {
+    width: 30%;
+    height: 80%;
+    background-color: rgba(4, 18, 59, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    
+}
+
+
+.bas{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.allbutton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoutbut {
+    width: 100%;
+    height: 100%;
+   
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoutbut a {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    border: 0.2rem solid red;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.allbutton a {
+    
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--neonorange);
+    border: 0.2rem solid var(--neonorange);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.allbutton a:hover {
+    cursor: pointer;
+    filter: brightness(200%);
+}
+
+.allbutton a img{
+    height: 80px;
+}
+
+/* 
++----------------------------------------------------------------------+
+| Pour les sélections
++----------------------------------------------------------------------+
+*/
+::-moz-selection {
+    color: black;
+    background-color: #2a9df4;
+}
+
+::selection {
+    color: gold;
+    background-color: blue;
+}
+
+/* 
++----------------------------------------------------------------------+
+| Scroll Bar
++----------------------------------------------------------------------+
+*/
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #193273;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: cyan;
+}
+
+::-webkit-scrollbar-button {
+    height: 8px;
+    background-color: #0086c8;
+}
